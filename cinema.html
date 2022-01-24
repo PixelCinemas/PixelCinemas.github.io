@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pixel Cinema</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="pixel.css" />
+    <style>
+      .bg-imageright {
+        background-image: linear-gradient(
+            to right,
+            rgba(41, 41, 41, 1),
+            rgba(41, 41, 41, 0.6)
+          ),
+          url("Media/pixelmaster.jpg");
+        min-height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .bg-imageleft {
+        background-image: linear-gradient(
+            to left,
+            rgba(41, 41, 41, 1),
+            rgba(41, 41, 41, 0.6)
+          ),
+          url("Media/pixelimax.jpg");
+        min-height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .leftcolumn {
+        margin-top: 40px;
+        float: left;
+        text-align: left;
+        width: 40%;
+        /*padding: 40px 25px 20px 25px;*/
+      }
+      .rightcolumn {
+        margin-top: 30px;
+        width: 40%;
+        float: right;
+        text-align: right;
+      }
+
+      .headercontent {
+        width: auto;
+        height: 450px;
+        margin: 0px 50px;
+        padding: 20px;
+      }
+
+      .movie-text {
+        color: white;
+        margin-left: 25px;
+        margin-top: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="bg-imageright">
+          <div class="topnav">
+            <img class="logo" src="Media/logo.svg" alt="logo" />
+            <a href="index.php">Home</a>
+            <a class="active" href="cinema.html">Cinema</a>
+            <a href="promotion.php">Promotions</a>
+            <a href="contactus.php">Contact Us</a>
+            <div class="profile-container">
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <input
+                    type="text"
+                    class="no-outline"
+                    placeholder="Search"
+                    name="search"
+                  />
+                  <button type="submit">
+                    <i class="fa fa-search" style="color: white"></i>
+                  </button>
+                </form>
+              </div>
+              <a class="righticon" href="movie_cart.php"
+                ><i
+                  class="fa fa-shopping-cart"
+                  style="font-size: 20px; float: right"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="headercontent">
+            <div class="movie-text">
+              <div class="row">
+                <div class="leftcolumn">
+                  <br />
+                  <h3>Experience the new</h3>
+                  <img
+                    src="Media/logo.svg"
+                    alt="movietitle"
+                    width="400px"
+                    style="margin-bottom: 25px"
+                  />
+
+                  <p>
+                    Welcome to the ultimate luxury movie viewing with a private
+                    lounge and plush electronic recliner seats. Pixel sets a new
+                    benchmark for multiplexes in Singapore by introducing a
+                    sophisticated club ambience, serving a wide variety of
+                    finefood and top wine list.
+                    <br /><br />
+
+                    A new level of concierge-style service, hitherto unseen in
+                    Singapore cinemas, will be enjoyed by patrons from the
+                    moment they arrive all the way through their patronage
+                    experience.
+                  </p>
+                  <br />
+
+                  <p style="color: #cf6679">Only available at Westgate</p>
+                </div>
+                <div class="rightcolumn">
+                  <img
+                    src="Media/pixelmaster.jpg"
+                    alt="master"
+                    style="width: 90%; border-radius: 5%; margin-bottom: 20px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-imageleft">
+          <div class="headercontent">
+            <div class="movie-text">
+              <div class="row">
+                <div class="leftcolumn">
+                  <img
+                    src="Media/pixelimax.jpg"
+                    alt="imax"
+                    style="width: 90%; border-radius: 5%; margin-bottom: 20px"
+                  />
+                </div>
+                <div class="rightcolumn">
+                  <img src="Media/imax.png" style="width: 100px" />
+                  <h3>Get maximum value at</h3>
+                  <img
+                    src="Media/logo.svg"
+                    alt="movietitle"
+                    width="400px"
+                    style="margin-bottom: 25px"
+                  />
+
+                  <p>
+                    For the ultimate big screen experience, it doesn't come any
+                    better than IMAX!
+                    <br /><br />
+
+                    IMAX is 1 gigantic auditorium with 602 seats and it has one
+                    of the widest screens in Asia (22.4 metres), the length of 2
+                    SBS buses combined.
+                  </p>
+
+                  <br />
+
+                  <p style="color: #cf6679">Available at all PIXEL Cinemas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          <img
+            src="Media/footerlogo.svg"
+            alt="logo"
+            style="width: 10%; height: 10%; margin-top: 20px"
+          />
+        </p>
+        <br />
+        <p>
+          <a href="index.php">HOME &emsp; | &emsp; </a>
+          <a href="contactus.php">FAQ &emsp; | &emsp; </a>
+          <a href="contactus.php">CONTACT US &emsp; | &emsp; </a>
+          <a href="contactus.php">TERMS OF USE &emsp; | &emsp; </a>
+          <a href="contactus.php">PRIVACY POLICY</a>
+        </p>
+        <br />
+        © COPYRIGHT 2020 PIXEL CINEMA. ALL RIGHTS RESERVED. <br />
+        CO. REG. NO.: 194700158G
+      </footer>
+    </div>
+  </body>
+</html>
